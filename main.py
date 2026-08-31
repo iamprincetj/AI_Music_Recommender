@@ -60,3 +60,4 @@ async def generate_rec(req: RequestModel, token: str = Depends(verify_api_key)):
 
     response = await orchestrate_recommendation(req)
     return JSONResponse(response)
+
